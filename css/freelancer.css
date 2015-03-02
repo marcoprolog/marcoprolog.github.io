@@ -251,6 +251,17 @@ section.success {
     }
 }
 
+.lnk-black{
+	color: #000000;
+}
+
+.lnk-black:hover,
+.lnk-black:focus,
+.lnk-black:active,
+.lnk-black.active {
+    color: #fff;
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
