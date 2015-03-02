@@ -36,6 +36,7 @@ h6 {
     font-weight: 700;
 }
 
+hr.star-grey,
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -46,6 +47,7 @@ hr.star-primary {
     text-align: center;
 }
 
+hr.star-grey:after,
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f005";
@@ -73,6 +75,15 @@ hr.star-primary {
 hr.star-primary:after {
     color: #2c3e50;
     background-color: #fff;
+}
+
+hr.star-grey {
+    border-color: #2c3e50;
+}
+
+hr.star-grey:after {
+    color: #2c3e50;
+    background-color: #dcd9d8;
 }
 
 .img-centered {
@@ -182,6 +193,10 @@ section h2 {
 section.success {
     color: #fff;
     background: #18bc9c;
+}
+
+section.contact {
+    background: #dcd9d8;
 }
 
 @media(max-width:767px) {
