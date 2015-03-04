@@ -25,6 +25,14 @@ a.active {
     color: #18bc9c;
 }
 
+a.white-link:hover,
+a.white-link:focus,
+a.white-link:active,
+a.white-link {
+    outline: 0;
+    color: #ffffff;
+}
+
 h1,
 h2,
 h3,

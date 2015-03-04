@@ -60,7 +60,7 @@
                         <a href="#publications">Publications</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio">Projects</a>
                     </li>
 					<li class="page-scroll">
                         <a href="#games">Games</a>
@@ -137,10 +137,10 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
 					<div align="center"><h3>Peer-Reviewed</h3></div>
-                    <p>Scirea, Marco, Mark J. Nelson, and Julian Togelius. "<b>Moody Music Generator: Characterising Control Parameters Using Crowdsourcing.</b>" in Proceedings of Evolutionary and Biologically Inspired Music, Sound, Art and Design (EvoMusArt) (2015) <b><i>[Nominated for Best Paper Award]</i></b></p>
-					<p>Scirea, Marco, et al. "<b>Evaluating musical foreshadowing of videogame narrative experiences.</b>" in Proceedings of Audio Mostly (2014).</p>
-					<p>Scirea, Marco, et al. "<b>Mood expression in real-time computer generated music using Pure Data.</b>" in Proceedings of the International Conference on Music Perception and Cognition (2014).</p>
-					<p>Scirea, Marco. "<b>Mood dependent music generator.</b>" in Proceedings of Advances in Computer Entertainment (2013).</p>
+                    <p>Scirea, Marco, Mark J. Nelson, and Julian Togelius. "<b>Moody Music Generator: Characterising Control Parameters Using Crowdsourcing.</b>" in Proceedings of Evolutionary and Biologically Inspired Music, Sound, Art and Design (EvoMusArt) (2015) <b><i>[Nominated for Best Paper Award]</i></b> <a class="white-link" href="https://drive.google.com/file/d/0B-cx77LEzRg9V3VYcEhyTmk1ZGM/view?usp=sharing" target="_blank" ><i>PDF</i></a></p>
+					<p>Scirea, Marco, et al. "<b>Evaluating musical foreshadowing of videogame narrative experiences.</b>" in Proceedings of Audio Mostly (2014). <a class="white-link" href="https://drive.google.com/file/d/0B-cx77LEzRg9elRfWXhLSjgyWkk/view?usp=sharing" target="_blank" ><i>PDF</i></a></p>
+					<p>Scirea, Marco, et al. "<b>Mood expression in real-time computer generated music using Pure Data.</b>" in Proceedings of the International Conference on Music Perception and Cognition (2014). <a class="white-link" href="https://drive.google.com/file/d/0B-cx77LEzRg9cUl0MUNWaDlnenc/view?usp=sharing" target="_blank" ><i>PDF</i></a></p>
+					<p>Scirea, Marco. "<b>Mood dependent music generator.</b>" in Proceedings of Advances in Computer Entertainment (2013). <a class="white-link" href="https://drive.google.com/file/d/0B-cx77LEzRg9Y0E0SVJrZnpQbFk/view?usp=sharing" target="_blank" ><i>PDF</i></a></p>
                 </div>
                 <!--<div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
@@ -156,7 +156,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>Projects</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -166,6 +166,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
+								<h3>Mood Expressive Music Generator</h3>
                             </div>
                         </div>
                         <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
@@ -176,6 +177,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
+								<h3>SMUG</h3>
                             </div>
                         </div>
                         <img src="img/portfolio/cake.png" class="img-responsive" alt="">
@@ -186,6 +188,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
+								<h3>Four Part Harmony Co-Evolution</h3>
                             </div>
                         </div>
                         <img src="img/portfolio/circus.png" class="img-responsive" alt="">
@@ -406,8 +409,6 @@
         </a>
     </div>
 
-    <!-- Portfolio Template -->
-	<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
 	<!-- Projects -->
     <div class="portfolio-modal modal fade" id="portfolioMoodGen" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -421,24 +422,20 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Mood Expressive Music Generator</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <p>This generator has been developed during part of my Master and the start of my PhD, it has been realized using PD (aka Pure Data), a real-time graphical programming environment for audio, video, and graphical processing.
+							The generated music is played by 3 instruments (synthesizers) and a drum machine. The system consists of five random number generators: four of these numbers will be converted into notes for the instruments and the drums, 
+							whilethe last one is used as a sound effect controller.</p>
+							<p> It creates randomic music that can express different moods by manipulating a relatively small set of variables that are indipendent from harmony and melody. The resulting music sounds very ambient.</p>
+							<p>Currently I'm developing a new generator that will probably not use PD and hopefully will be able to express a bigger musical space and produce more interesting music.</p>
+							<p><h3>Relevant Publications:</h3>
+									<p>Scirea, Marco, Mark J. Nelson, and Julian Togelius. "<b>Moody Music Generator: Characterising Control Parameters Using Crowdsourcing.</b>" in Proceedings of Evolutionary and Biologically Inspired Music, Sound, Art and Design (EvoMusArt) (2015) <b><i>[Nominated for Best Paper Award]</i></b> <a href="https://drive.google.com/file/d/0B-cx77LEzRg9V3VYcEhyTmk1ZGM/view?usp=sharing" target="_blank" ><i>PDF</i></a></p>
+									<p>Scirea, Marco, et al. "<b>Evaluating musical foreshadowing of videogame narrative experiences.</b>" in Proceedings of Audio Mostly (2014). <a href="https://drive.google.com/file/d/0B-cx77LEzRg9elRfWXhLSjgyWkk/view?usp=sharing" target="_blank" ><i>PDF</i></a></p>
+									<p>Scirea, Marco, et al. "<b>Mood expression in real-time computer generated music using Pure Data.</b>" in Proceedings of the International Conference on Music Perception and Cognition (2014). <a href="https://drive.google.com/file/d/0B-cx77LEzRg9cUl0MUNWaDlnenc/view?usp=sharing" target="_blank" ><i>PDF</i></a></p>
+									<p>Scirea, Marco. "<b>Mood dependent music generator.</b>" in Proceedings of Advances in Computer Entertainment (2013). <a href="https://drive.google.com/file/d/0B-cx77LEzRg9Y0E0SVJrZnpQbFk/view?usp=sharing" target="_blank" ><i>PDF</i></a></p>
+							</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -458,24 +455,18 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2><b>SMUG</b>: <b>S</b>cientific <b>Mu</b>sic <b>G</b>enerator</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <p>Music is based on the real world. Composers use their day-to-day lives as inspiration to create rhythm and lyrics. Procedural music generators are capable of creating good quality pieces, and while some already 
+							use the world as inspiration, there is still much to be explored in this. We have developed a system to generate lyrics and melodies from real-world data, in particular from academic papers. 
+							Through this we wanted to create a playful experience and establish a novel way of generating content (textual and musical) that could be applied to other domains, in particular to games. 
+							For melody generation, we have used a novel approach to Markov chains evolution.</p>
+							<p>Our system takes in input a PDF of an academic paper and outputs lyrics and relative musical melody.</p>
+							<p><h3>Team:</h3>
+									Marco Scirea<br>
+									Gabriella A.B. Barros<br>
+							</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -495,24 +486,17 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Four Part Harmony Co-Evolution</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <p>This project evolves four part harmonies, either with a given bass or free. The evolution uses the Multiple Worlds Model defined by Joseph Brown.</p>
+							<p>The model makes distinct populations evolve independently, but when calculating the fitness function requires the individuals from the various populations to work together. In our case we have a population 
+							for each of the four voices and the fitness function is calculated by considering the voices singing together.</p>
+							<p>This approach leads to speciation, where each of the voices evolve in best way to work together with the other ones.</p>
+							<p><h3>Team:</h3>
+									Marco Scirea<br>
+									Joseph Brown<br>
+							</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
