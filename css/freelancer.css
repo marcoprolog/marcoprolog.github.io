@@ -16,6 +16,11 @@ p.small {
     font-size: 16px;
 }
 
+i.highlight{
+	color: #ae6a2d;
+	bold: true;
+}
+
 a,
 a:hover,
 a:focus,
