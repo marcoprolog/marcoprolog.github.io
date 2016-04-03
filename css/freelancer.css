@@ -38,6 +38,22 @@ a.white-link {
     color: #ffffff;
 }
 
+a.blue-link:hover,
+a.blue-link:focus,
+a.blue-link:active,
+a.blue-link {
+    outline: 0;
+    color: #2c3e50;
+}
+
+a.orange-link:hover,
+a.orange-link:focus,
+a.orange-link:active,
+a.orange-link {
+    outline: 0;
+    color: #ae6a2d;
+}
+
 h1,
 h2,
 h3,
