@@ -226,6 +226,48 @@ section.contact {
     }
 }
 
+#cf {
+  position:relative;
+  height:284px;
+  width:100%;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:50%;
+  margin-left:-142px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+@keyframes cfFadeInOut {
+0% {
+opacity:1;
+}
+10% {
+opacity:1;
+}
+90% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf img.top {
+animation-name: cfFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 6s;
+animation-direction: alternate;
+}
+
 .portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
