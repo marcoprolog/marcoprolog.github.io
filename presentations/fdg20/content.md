@@ -152,24 +152,48 @@ We also include an additional game developed explicitly for teaching CT conceps.
 ![](practices2.png)
 
 
-### Results
-
-![](features-small.png)
-
-
-### Supportive mechanics
-
-* Action queues<!-- .element: class="fragment" -->
-* Sumultaneous actions<!-- .element: class="fragment" -->
-* Board modularity<!-- .element: class="fragment" -->
-* Cooperation <!-- .element: class="fragment" -->
-* Resource management<!-- .element: class="fragment" -->
-
-
 ### Missing concepts
 
 * Testing and debugging is rarely present<!-- .element: class="fragment" -->
 * Loops<!-- .element: class="fragment" -->
+
+
+### Results
+
+<img src="concepts.png" alt="drawing" width="600"/>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr><!-- .element: class="fragment" -->
+    <th class="tg-0pky">RoboRally</th>
+    <th class="tg-0pky">
+Action Queue<br>
+Bias<br>
+Grid Movement<br>
+Lose a Turn<br>
+Modular Board<br>
+Programmed Movement<br>
+Race<br>
+Scenario / Mission / Campaign Game<br>
+Simultaneous Action Selection </th>
+  </tr>
+</thead>
+</table>
+
+<small>from boardgamegeek.com</small><!-- .element: class="fragment" -->
+
+
+### Supportive mechanics
+
+![](features-small.png)
 
 
 ### How to identify CT-relevant games
