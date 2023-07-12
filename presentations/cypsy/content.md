@@ -91,7 +91,7 @@ Development of a system to track anxiety levels<!-- .element: class="fragment" -
 
 Testing of the high-fidelity prototype<!-- .element: class="fragment" data-fragment-index="1" -->
 
-Secondary purpose of collecting HR, GSR, and Subjective Unitys of Distress (SUDS) data for predictive models.<!-- .element: class="fragment" -->
+Secondary purpose of collecting HR, GSR, and Subjective Units of Distress (SUDS) data for predictive models.<!-- .element: class="fragment" -->
 
 Demographics: 20 participants; 10 diagnosed with Social Anxiety Disorder (SAD) and 10 control participants.<!-- .element: class="fragment" -->
 
