@@ -249,7 +249,9 @@ The intersection of VR and therapy is rich with potential. Our ability to predic
 <!-- .slide: data-background-color="var(--color4)" -->
 ## Thank you :)
 ---
-Webpage: [marcoscirea.com](http://marcoscirea.com)
+Webpage: [marcoscirea.com](https://marcoscirea.com)
 
-You can find this presentation at [marcoscirea.com/presentations/cypsy](http://marcoscirea.com/presentations/cypsy)
+VR8 webpage: [vr8.dk](https://vr8.dk)
+
+You can find this presentation at [marcoscirea.com/presentations/cypsy](https://marcoscirea.com/presentations/cypsy)
 
