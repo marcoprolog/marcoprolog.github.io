@@ -22,7 +22,6 @@
         link.type = 'text/css';
         link.href = window.location.search.match(/print-pdf/gi) ? '../css/print/pdf.css' : '../css/print/paper.css';
         document.getElementsByTagName('head')[0].appendChild(link);
-
     </script>
 </head>
 
@@ -61,17 +60,7 @@
             slideNumber: true,
             slideNumber: 'c/t',
 
-            // Parallax background image
-            parallaxBackgroundImage: 'background2.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
-
-            // Parallax background size
-            parallaxBackgroundSize: '2100px 1200px', //786px', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
-
             pdfSeparateFragments: false,
-
-            // Number of pixels to move the parallax background per slide
-            // - Calculated automatically unless specified
-            // - Set to 0 to disable movement along an axis
 
             dependencies: [{
                     src: '../plugin/markdown/marked.js'
@@ -92,8 +81,5 @@
                 }
             ]
         });
-
     </script>
-</body>
-
-</html>
+</body></html>
