@@ -4,16 +4,23 @@
  
 [msc@mmmi.sdu.dk](mailto:msc@mmmi.sdu.dk)
 
-<img src="sdu.png" alt="drawing" width="400"/>
+<img src="M%C3%A6rsk-McKinney-M%C3%B8ller-Instituttet.png" alt="SDU MMMI logo" width="150" class="noBorder"/>
+<img src="Institut-for-Psykologi.png" alt="SDU institute of psychology logo" width="150" class="noBorder"/>
+<img src="CIMT-2.png" alt="CIMT logo" width="150" class="noBorder"/>
+<img src="Klinisk-Institut.png" alt="SDU Clinical institute logo" width="150" class="noBorder"/>
+<img src="Psykiatrien-i-Region-Syddanmark-2.png" alt="Psykiatrien i Region Syddanmark logo" width="150" class="noBorder"/>
 
 ---
 
 <!-- .slide: data-background-color="var(--color1)" -->
-## Social anxiety is a growing issue
+## Social anxiety disorder is a big issue
 
-350000 Danes are estimated to have an anxiety disorder<!-- .element: class="fragment" -->
+350.000 Danes are estimated to have an anxiety disorder<!-- .element: class="fragment" -->
 
-A typical component of treatment is exposure therapy<!-- .element: class="fragment" -->
+Cognitive behavioral therapy (CBT) is considered the gold standard in the treatment of SAD and exposure is a central component to CBT<!-- .element: class="fragment" -->
+
+Note:
+Anxiety disorders are a very common mental health problem with an estimated lifetime prevalence between 13-21% (Somers et. al., 2006). Social anxiety disorder is one of the most prevalent anxiety disorder with prevalence between 4-14% (Chrome et al., 2015, Fehm et al., 2005, Ruscio et al 2018)
 
 
 <!-- .slide: data-background-color="var(--color1)" -->
@@ -22,7 +29,7 @@ A typical component of treatment is exposure therapy<!-- .element: class="fragme
 ![VR Exposure](therapy.webp)<!-- .element: style="width:70%" class="fragment" -->
 
 Note:
-Exposure therapy is a psychological treatment that helps people confront their fears. When we apply Virtual Reality (VR) to this treatment, we provide patients with an immersive, controlled, and adaptable therapeutic environment. The goal is to expose patients to the feared object or context without any risk in order to help them overcome their anxiety. The current research is geared towards determining the most effective way to deliver VR-based exposure therapy.
+Exposure therapy is a psychological treatment that helps people confront their fears. The goal is to expose patients to the feared object or context without any risk in order to help them overcome their anxiety. 
 
 
 <!-- .slide: data-background="VR8-extended2.png" data-background-size="contain" data-background-opacity="50%"  -->
@@ -33,19 +40,25 @@ Virtual Reality (VR) is a promising tool for exposure therapy.<!-- .element: cla
 
 Immersive, controlled, and adaptable therapeutic environment.<!-- .element: class="fragment" -->
 
-Easier to place the patient in anxiety inducing situations<!-- .element: class="fragment" -->
+Easier to place the patient in anxiety inducing situations.<!-- .element: class="fragment" -->
 
 Personalized, effective therapy experience.<!-- .element: class="fragment" -->
+
+---
+<small>Parsons et al. 2008, Opriş et al. 2013, Powers et al. 2008, Kampmann et al. 2016, Morina et al. 2021</small>
+
+Note: 
+Cognitive behavioral therapy (CBT) with exposure in VR has a superior effect compared to waitlist control, and similar effect when compared to CBT with in vivo exposure. Several meta-analyses on VR-exposure for SAD have been conducted (Parsons et al. 2008, Opriş et al. 2013, Powers et al. 2008, Kampmann et al. 2016, Morina et al, 2021)
 
 
 <!-- .slide: data-background-color="var(--color1)" -->
 ## What about VR?
 
 But it has some challenges:<!-- .element: class="fragment" -->
-- How to build these experiences?<!-- .element: class="fragment" --> 
-- How to adapt the experince to the specific patient?<!-- .element: class="fragment" -->
-- How does it compare with traditional exposire therapy?<!-- .element: class="fragment" -->
-- <!-- .element: class="fragment" --><b>How to convey information about the patient to the therapist?</b>
+- How to build these virtual environments?<!-- .element: class="fragment" --> 
+- How to adapt the experience to the specific patient?<!-- .element: class="fragment" -->
+- How does it compare with traditional exposure therapy/in vivo?<!-- .element: class="fragment" -->
+- <!-- .element: class="fragment" --><b>How to convey information about the patient's anxiety levels to the therapist during exposure?</b>
 
 The proposed solution: Utilizing biomarkers for real-time monitoring of anxiety levels during VR sessions.<!-- .element: class="fragment" -->
 
@@ -57,9 +70,9 @@ The proposed solution: Utilizing biomarkers for real-time monitoring of anxiety 
 
 Project funded by Innovation Fund Denmark<!-- .element: class="fragment" -->
 
-Development of a flexible and adjustable treatment of social anxiety in VR<!-- .element: class="fragment" -->
+Development of a VR-content for individual tailored exposure therapy<!-- .element: class="fragment" -->
 
-Automated biofeedback system to provide insight to the therapist<!-- .element: class="fragment" -->
+Development of a system to track anxiety levels<!-- .element: class="fragment" -->
 
 
 <!-- .slide: data-background="exposure.png" data-background-size="contain"   -->
@@ -70,7 +83,7 @@ Automated biofeedback system to provide insight to the therapist<!-- .element: c
 
 <!-- .slide: data-background="equipment.jpg" data-background-size="contain" -->
 <!-- .slide: data-background-color="var(--color2)" -->
-## The experiment<!-- .element: class="onFigure" -->
+## Feasibility study<!-- .element: class="onFigure" -->
 
 
 <!-- .slide: data-background-color="var(--color2)" -->
@@ -78,12 +91,12 @@ Automated biofeedback system to provide insight to the therapist<!-- .element: c
 
 Testing of the high-fidelity prototype<!-- .element: class="fragment" data-fragment-index="1" -->
 
-Secondary purpose of collecting HR, GSR, and SUDS data for predictive models.<!-- .element: class="fragment" -->
+Secondary purpose of collecting HR, GSR, and Subjective Units of Distress (SUDS) data for predictive models.<!-- .element: class="fragment" -->
 
 Demographics: 20 participants; 10 diagnosed with Social Anxiety Disorder (SAD) and 10 control participants.<!-- .element: class="fragment" -->
 
----
-<small>Ørskov, Per Trads, et al. "Cognitive behavioral therapy with adaptive virtual reality exposure vs. cognitive behavioral therapy with in vivo exposure in the treatment of social anxiety disorder: A study protocol for a randomized controlled trial." Frontiers in Psychiatry</small><!-- .element: class="fragment" data-fragment-index="1" -->
+Note:
+phasic GSR peaks
 
 
 <!-- .slide: data-background-color="var(--color2)" -->
@@ -92,6 +105,8 @@ Demographics: 20 participants; 10 diagnosed with Social Anxiety Disorder (SAD) a
 - Baseline in a "neutral" VR experience<!-- .element: class="fragment" -->
 - Exposure to 4 scenarios<!-- .element: class="fragment" -->
 - Participants asked to self-report SUDS every 2 minutes<!-- .element: class="fragment" -->
+
+Note: SUDS 11 point Likert scale (0= not at all, 10= extremely).
 
 
 <!-- .slide: data-background="Bench.jpg" data-background-size="contain"   -->
@@ -123,7 +138,7 @@ Demographics: 20 participants; 10 diagnosed with Social Anxiety Disorder (SAD) a
 ## Machine Learning Models 
 
 Three models applied: 
-- Linear Regression<!-- .element: class="fragment" -->
+- Model 1: Linear Regression<!-- .element: class="fragment" -->
  - Widely used<!-- .element: class="fragment" -->
  - Assumes linar relationship between input/output<!-- .element: class="fragment" -->
  - Simple and interpretable (but limited)<!-- .element: class="fragment" -->
@@ -134,11 +149,11 @@ Three models applied:
 <!-- .slide: data-background-color="var(--color3)" -->
 ## Machine Learning Models 
 
-- Backpropagation<!-- .element: class="fragment" -->
+- Model 2: Backpropagation<!-- .element: class="fragment" -->
  - Classic algorithm for training artificial neural networks<!-- .element: class="fragment" -->
  - Able to learn complex, non-linear relationships<!-- .element: class="fragment" -->
  - Static network architecture<!-- .element: class="fragment" -->
-- NEAT<!-- .element: class="fragment" -->
+- Model 3: NeuroEvolution of Augmented Topologies (NEAT)<!-- .element: class="fragment" -->
  - Evolutionary algorithm<!-- .element: class="fragment" -->
  - Also trains neural network<!-- .element: class="fragment" -->
  - Flexible network topology<!-- .element: class="fragment" -->
@@ -148,7 +163,7 @@ Three models applied:
 ## Data Treatment
 
 Based on the collected data, we considered three data scenarios as inputs of the models: <!-- .element: class="fragment" -->
-1. Raw HR and GSR data<!-- .element: class="fragment" -->
+1. Raw HR and GSR peaks per minute data<!-- .element: class="fragment" -->
 2. Baseline-normalized (avg ± 1 SD)<!-- .element: class="fragment" -->
 3. Baseline-scaled data <!-- .element: class="fragment" -->
 
@@ -182,10 +197,10 @@ Note: After training and testing our models, we found some fascinating results. 
 |Input type\Output type|Suds normalised|suds bracketed|
 |:----|:----|:----|
 |Raw input|**0,78**|**0,73**|
-|Baseline|0,63|0,6|
+|Baseline|0,63|0,60|
 |Bracketed baseline|0,63|0,65|
 
-Unexpected result: an investigation of the best models shows prioritization of HR over GSR as a significant anxiety predictor<!-- .element: class="fragment" -->
+<!-- .element: class="fragment" -->Unexpected result: an investigation of the best models shows **prioritization of HR over GSR** as a significant anxiety predictor. Moreover, **baseline data did not improve the model**
 
 
 <!-- .slide: data-background-color="var(--color3)" -->
@@ -203,10 +218,18 @@ Unexpected result: an investigation of the best models shows prioritization of H
 <!-- .slide: data-background-color="var(--color4)" -->
 ## Implications and Future Research
 
-- One of the models is being used in an ongoing Randomized Control Trial (RCT) study<!-- .element: class="fragment" -->
+- One of the models is being used in an ongoing Randomized Control Trial (RCT)<!-- .element: class="fragment" data-fragment-index="1"-->
 - We will evaluate its predictions once the RCT is done<!-- .element: class="fragment" -->
 - ...while at the same time gathering more data to build better prediction models.<!-- .element: class="fragment" -->
-- We are also planning an experiment to build a large dataset of biometric data and SUDS from non-SAD participants<!-- .element: class="fragment" -->
+
+---
+<small>Ørskov, Per Trads, et al. "Cognitive behavioral therapy with adaptive virtual reality exposure vs. cognitive behavioral therapy with in vivo exposure in the treatment of social anxiety disorder: A study protocol for a randomized controlled trial." Frontiers in Psychiatry</small><!-- .element: class="fragment" data-fragment-index="1" -->
+
+
+<!-- .slide: data-background-color="var(--color4)" -->
+## Implications and Future Research
+
+- We are also planning an experiment to build a large dataset of biometric data and SUDS from non-SAD participants
 
 
 <!-- .slide: data-background="exposure.png" data-background-size="contain" data-background-opacity="20%"  -->
@@ -215,9 +238,9 @@ Unexpected result: an investigation of the best models shows prioritization of H
 
 Building advanced models to better predict and respond to anxiety levels could enhance the effectiveness of exposure therapy<!-- .element: class="fragment" -->
 
-We are confident there's more advanced to be made <!-- .element: class="fragment" -->
+We are confident there's more advancements to be made <!-- .element: class="fragment" -->
 
-The potential of adaptive VR: real-time prediction of anxiety can lead to personalized therapy sessions<!-- .element: class="fragment" -->
+The potential of adaptive VR: real-time prediction of anxiety can lead to personalized therapy sessions to insure not too easy/challenging exposure for the individual patient<!-- .element: class="fragment" -->
 
 Note:
 The intersection of VR and therapy is rich with potential. Our ability to predict anxiety levels in real time during VR exposure could greatly enhance the effectiveness of exposure therapy. With advances in machine learning and our understanding of biometrics, we're confident that this research field will continue to grow and improve patient outcomes.
@@ -226,7 +249,9 @@ The intersection of VR and therapy is rich with potential. Our ability to predic
 <!-- .slide: data-background-color="var(--color4)" -->
 ## Thank you :)
 ---
-Webpage: [marcoscirea.com](http://marcoscirea.com)
+Webpage: [marcoscirea.com](https://marcoscirea.com)
 
-You can find this presentation at [marcoscirea.com/presentations/cypsy](http://marcoscirea.com/presentations/cypsy)
+VR8 webpage: [vr8.dk](https://vr8.dk)
+
+You can find this presentation at [marcoscirea.com/presentations/cypsy](https://marcoscirea.com/presentations/cypsy)
 
