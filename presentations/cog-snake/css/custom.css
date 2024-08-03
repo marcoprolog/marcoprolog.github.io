@@ -1,0 +1,61 @@
+:root {
+    --color1: #2c3e50;
+    --color2: #4c0004;
+    --color3: #0b5158;
+    --color4: #38002c;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    #font-family: 'Raleway', sans-serif;
+}
+
+h1.onFigure,
+h2.onFigure,
+h3.onFigure {
+    margin: 0 0 20px 0;
+    color: white;
+    line-height: 0.9em;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-shadow:
+        -2px -2px 0 #222222,
+        2px -2px 0 #222222,
+        -2px 2px 0 #222222,
+        2px 2px 0 #222222;
+}
+}
+
+/* change the font ot the paragraphs */
+.reveal p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.reveal img.noBorder {
+    border: none;
+    background: none;
+}
+
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+.bigcol{
+    flex: 2;
+}
+
+.logo_container{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+.logo{
+    
+}
+
