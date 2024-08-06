@@ -1,10 +1,11 @@
-﻿## Stealth Aesthetics: an Evolutionary Approach to Virtual Camouflage Design
+## Towards interactive evolutionary camouflage design
 
 Rasmus Ploug, Emil Rimer, Anthon Petersen, [Marco Scirea](http://marcoscirea.com), Joseph Alexander Brown
 
 <div class="logo_container">
 <img src="sdu-logo.png" alt="SDU logo" width="40%" class="noBorder"/>
 <img src="logo_metaverse.png" alt="SDU Metaverse logo" width="40%" class="noBorder"/>
+<img src="TRU_Logo.png" alt="TRU logo" width="40%" class="noBorder"/>
 </div>
 
 <!--<small>[msc@mmmi.sdu.dk](mailto:msc@mmmi.sdu.dk) [gdlt.sdu.dk](https://gdlt.sdu.dk/)</small>-->
@@ -17,9 +18,9 @@ Rasmus Ploug, Emil Rimer, Anthon Petersen, [Marco Scirea](http://marcoscirea.com
 <div class="container">
 <div class="col">
     
-- Attributes to personalized player-characters<!-- .element: class="fragment" -->
-- Pre-made camouflages to ensure high quality skins<!-- .element: class="fragment" -->
-- Limits the amount of player choice<!-- .element: class="fragment" -->
+- Attributes to personalized player-characters
+- Pre-made camouflages to ensure high quality skins
+- Limits the amount of player choice
 
 </div>
 
@@ -39,9 +40,9 @@ Rasmus Ploug, Emil Rimer, Anthon Petersen, [Marco Scirea](http://marcoscirea.com
 <div class="col">
 <small>    
 
-- Utilizes an evolutionary algorithm.<!-- .element: class="fragment" -->
-- Employs different evolutionary principles.<!-- .element: class="fragment" -->
-- Increasing agency and personalization for players<!-- .element: class="fragment" -->
+- Utilizes an evolutionary algorithm.
+- Employs different evolutionary principles.
+- Increasing agency and personalization for players
 
 </small>
 </div>
@@ -93,19 +94,19 @@ Target-Replication Task & Questionnaire
 <div class="col">
 <small>    
     
-Test Setup: <!-- .element: class="fragment" -->
-- 5 minutes of sandbox play with the tool to get the participant to learn to use it.<!-- .element: class="fragment" -->
-- Perform the target-replication task<!-- .element: class="fragment" -->
+Test Setup: 
+- 5 minutes of sandbox play with the tool to get the participant to learn to use it.
+- Perform the target-replication task
 
-Goal of the task: To replicate a randomly given camouflage pattern (to imitate the player recreating a skin seen in a game)<!-- .element: class="fragment" -->
+Goal of the task: To replicate a randomly given camouflage pattern (to imitate the player recreating a skin seen in a game)
 
 </small>
 </div>
 
 <div class="bigcol">
     
-![The proposed system UI](target-result.png)<!-- .element: style="width:90%" -->
-![The proposed system UI](targets.png)<!-- .element: style="width:90%" -->
+![The proposed system UI](target-result.png)<!-- .element: style="width:100%" -->
+![The proposed system UI](targets.png)<!-- .element: style="width:100%" -->
 
 </div>
 </div>
@@ -151,21 +152,14 @@ Completion Time for **Target 1 (Simple)** was significantly higher than that for
 <!-- .slide: data-background-color="var(--color3)" -->
 ### Results from the Follow-up Questionnaire
 
-<div class="container">
-<div class="col">
-    
-![Titanfall camouflage menu](survey-results1.png)<!-- .element: style="width:100%" -->
-![Titanfall camouflage menu](survey-results3.png)<!-- .element: style="width:100%" -->
+Participants show mixed reactions about their agency in the system...<!-- .element: class="fragment" -->
 
-</div>
+... but felt satisfied with the results!<!-- .element: class="fragment" -->
 
-<div class="col">
-    
-![Titanfall camouflage menu](survey-results2.png)<!-- .element: style="width:100%" -->
-![Titanfall camouflage menu](survey-results4.png)<!-- .element: style="width:100%" -->
 
-</div>
-</div>
+#  
+
+![Titanfall camouflage menu](survey-results3.png)
 
 ---
 
