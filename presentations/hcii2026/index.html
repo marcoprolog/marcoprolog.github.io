@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../../css/reveal.css" />
+		<link rel="stylesheet" href="../../css/theme/black.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../lib/css/zenburn.css" />
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement("link");
+			link.rel = "stylesheet";
+			link.type = "text/css";
+			link.href = window.location.search.match(/print-pdf/gi)
+				? "../../css/print/pdf.css"
+				: "../../css/print/paper.css";
+			document.getElementsByTagName("head")[0].appendChild(link);
+		</script>
+		<style type="text/css">
+			/* 1. Style header/footer <div> so they are positioned as desired. */
+			#header-left {
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				z-index: 20;
+			}
+			#header-right {
+				position: absolute;
+				top: 0%;
+				right: 0%;
+				z-index: 20;
+			}
+			#footer-left {
+				position: absolute;
+				bottom: 0%;
+				left: 0%;
+				z-index: 20;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="var(--color0)" class="title-slide">
+					<h2>Simplifying Prompt Engineering for Educational Content Generation</h2>
+					<div class="authors">
+						<strong>Jakob J. Garde</strong> &nbsp;·&nbsp;
+						<strong>Marcus P. B. Elmkvist</strong> &nbsp;·&nbsp; <strong>Marco Scirea</strong>
+					</div>
+					<div class="logo_container">
+					<img src="sdu-logo.png" style="width:40%; position:relative; left:0px; top:0px; border:0px; background: none;">
+					<img src="logo_metaverse.png" style="width:40%; position:relative; left:0px; top:0px; border:0px; background: none;">
+					</div>
+				</section>
+
+				<!-- ================= GROUP 1 : THE PROBLEM (color1) — vertical stack ================= -->
+				<section data-background-color="var(--color1)" data-background-image="logo_metaverse.png" data-background-size="cover"
+         data-background-opacity="0.08">
+					<section>
+						<h2>Math motivation is declining</h2>
+						<div class="container">
+							<div class="bigcol">
+								<p>
+									Achievement in grades 4 &amp; 8 is falling worldwide, tracking a drop
+									in <strong>confidence</strong> and <strong>perceived value</strong>, not just skill.
+								</p>
+								<p><small>Our own survey, n = 38, ages 12–13, echoes the trend.</small></p>
+							</div>
+							<div class="col">
+								<div class="stat-row">
+									<div class="stat">
+										<div class="num">42%</div>
+										<div class="lbl">low motivation</div>
+									</div>
+								</div>
+								<div class="stat-row">
+									<div class="stat">
+										<div class="num">11%</div>
+										<div class="lbl">high motivation</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Teachers can't keep up with customisation</h2>
+						<div class="container">
+							<div class="col">
+								<ul>
+									<li class="fragment">
+										Matematikfessor, Mattip, Gyldendal filter only by <em>grade</em> or
+										<em>domain</em>
+									</li>
+									<li class="fragment">Adjusting terminology, length, or theme means rewriting problems by hand</li>
+								</ul>
+							</div>
+							<div class="col">
+								<p class="fragment">Every extra requirement — <strong>terminology, length, theme, difficulty</strong> — collapses the odds of finding a ready-made match.</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>State of the art</h2>
+						<p>
+							MathGen, AI Math Worksheet Generator, and NoteGPT already generate problems automatically.
+						</p>
+						<div class="container">
+							<div class="col fragment">
+								<small
+									><strong>They offer</strong><br />subdomain selection<br />some solution-method
+									options</small
+								>
+							</div>
+							<div class="col fragment">
+								<small
+									><strong>They lack</strong><br />language-complexity control · in-app editing<br />searchable
+									metadata · RAG-based refinement</small
+								>
+							</div>
+						</div>
+						<blockquote class="fragment">Can a generative tool close this gap for teachers?</blockquote>
+					</section>
+				</section>
+
+				<!-- ================= GROUP 2 : THE SYSTEM (color2) — vertical stack ================= -->
+				<section data-background-color="var(--color2)" data-background-image="logo_metaverse.png" data-background-size="cover"
+         data-background-opacity="0.08">
+					<section class="section-title">
+						<div class="tag-line">Methodology</div>
+						<h1>The System</h1>
+					</section>
+
+					<section>
+						<h2>Input → Output → Review</h2>
+						<div class="container">
+							<div class="col">
+								<small>
+									Teachers set themes, domain, difficulty, solution method, text length, and language
+									level.<br /><br />
+									The generated problem — with LaTeX notation and a thematic image — is directly
+									editable before publishing.
+								</small>
+							</div>
+							<div class="bigcol">
+								<figure>
+									<img src="screenshot_of_application_frontend.png" alt="Generator Page three-panel interface" style="max-height: 62vh;"/>
+								</figure>
+							</div>
+						</div>
+					</section>
+
+					<section data-background="entire_conceptual_system_architecture.png" data-background-size="contain">
+					</section>
+
+					<section>
+						<h2>The Generator Page</h2>
+						<figure>
+							<img
+								src="generator_user_flow.png"
+								alt="User flow for the Generator Page"
+								style="max-height: 52vh" />
+						</figure>
+					</section>
+
+					<section>
+						<h2>Structured I/O keeps the model honest</h2>
+						<div class="container">
+							<div class="col">
+								<p>Semantic Kernel (.NET) calling <strong>GPT-4o-mini</strong></p>
+								<p>
+									<small
+										>OpenAI's <code>response_format</code> enforces a strict JSON schema — title,
+										narrative, subtasks, LaTeX, metadata.</small
+									>
+								</p>
+							</div>
+							<div class="col">
+								<p>Multiple choice &nbsp;·&nbsp; Problem solving</p>
+								<p>
+									<small
+										>Each path has its own curated examples plus a dynamic reminder preamble.</small
+									>
+								</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- ================= GROUP 3 : EVALUATION (color3) — vertical stack ================= -->
+				<section data-background-color="var(--color3)" data-background-image="logo_metaverse.png" data-background-size="cover"
+         data-background-opacity="0.08">
+					<section class="section-title">
+						<div class="tag-line">Three pilot studies</div>
+						<h1>Evaluation</h1>
+					</section>
+
+					<section>
+						<h2>Student Survey</h2>
+						<div class="container">
+							<div class="col">
+								<figure>
+									<img
+										src="motivation1.png"
+										alt="Student motivation and satisfaction in mathematics" />
+								</figure>
+							</div>
+							<div class="col">
+								<figure>
+									<img src="motivation2.png" alt="Motivation across maths problem types" />
+								</figure>
+							</div>
+						</div>
+						<p><small>n = 38, ages 12–13 — word problems rated lowest of all ten problem types.</small></p>
+					</section>
+
+					<section>
+						<h2>Students preferred the traditional problem</h2>
+						<div class="container">
+							<div class="col">
+								<figure>
+									<img src="preference.png" alt="Traditional vs generated preference" />
+								</figure>
+							</div>
+							<div class="col">
+								<figure>
+									<img src="hypothetical.png" alt="Hypothetical motivation change" />
+								</figure>
+							</div>
+						</div>
+						<p>
+							<small>Using no prompt engineering and no picture, to establish a baseline.</small
+							>
+						</p>
+					</section>
+
+					<section>
+						<h2>Visuals are important</h2>
+						<p>10 students compared 10 problem pairs; 2 teachers were interviewed on design needs.</p>
+						<blockquote>"I would have picked the generated one — if it had a picture too."</blockquote>
+						<p>
+							<small
+								>Traditional problems came with diagrams; LLM ones didn't. Teachers asked for filters on
+								theme, domain, difficulty, time, and method.</small
+							>
+						</p>
+					</section>
+
+					<section>
+						<h2>Teachers engaged nearly twice as long with the prototype</h2>
+						<div class="container">
+							<div class="bigcol">
+								<div class="stat-row">
+									<div class="stat">
+										<div class="num">11:17</div>
+										<div class="lbl">min · plain ChatGPT</div>
+									</div>
+									<div class="stat">
+										<div class="num">20:33</div>
+										<div class="lbl">min · the prototype</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<small
+									>Think-aloud A/B task, 3 teachers: build one assignment with each tool, same theme
+									and domain.</small
+								>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- ================= GROUP 4 : FINDINGS (color4) — vertical stack ================= -->
+				<section data-background-color="var(--color4)" data-background-image="logo_metaverse.png" data-background-size="cover"
+         data-background-opacity="0.08">
+					<section class="section-title">
+						<div class="tag-line">What did we learn?</div>
+						<h1>Findings</h1>
+					</section>
+
+					<section>
+						<h3>Structure lowers the barrier...</h3>
+						<p class="fragment fade-up">
+							Parameters let teachers focus on <strong>pedagogical intent</strong>, not prompt wording.
+						</p>
+						<p class="fragment fade-up">
+							Automated layout was consistently valued: less post-processing, more classroom-ready
+							output.
+						</p>
+						<h3 class="fragment fade-up">...but doesn't remove the teacher</h3>
+						<p class="fragment fade-up">
+							Mathematical reasoning on multi-step problems still needs a human check.
+						</p>
+					</section>
+
+					<section>
+						<h2>Limitations</h2>
+						<ul>
+							<li>
+								Final usability test: <strong>only 3 teachers</strong> 
+							</li>
+							<li>Missing features had to be explained verbally, shaping expectations</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Scaffolded prompting, not automated teaching</h2>
+						<p>
+							Distilling prompt engineering into pedagogical parameters and layouts makes
+							LLM-assisted content usable for teachers.
+						</p>
+						<p>
+							<small
+								>Next: Search / Problem / Paper pages · RAG over top-rated problems · a larger, more
+								diverse teacher evaluation.</small
+							>
+						</p>
+					</section>
+				</section>
+
+				<!-- ================= THANK YOU ================= -->
+				<section class="title-slide" data-background-image="logo_metaverse.png" data-background-size="cover"
+         data-background-opacity="0.08">
+					<div>Thank you :)</div>
+					<h1>Questions?</h1>
+					
+					<div><em>Video demo: <a href="https://youtu.be/Pv6sDVl3wGg">youtu.be/Pv6sDVl3wGg</a></em></div>
+					<hr>
+					<div>
+						Jakob J. Garde — kontakt@jakobgarde.dk <br> Marcus P. B. Elmkvist —
+						melmkvist@gmail.com <br> Marco Scirea — msc@mmmi.sdu.dk
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: "../../plugin/markdown/marked.js" },
+					{ src: "../../plugin/markdown/markdown.js" },
+					{ src: "../../plugin/notes/notes.js", async: true },
+					{
+						src: "../../plugin/highlight/highlight.js",
+						async: true,
+						callback: function () {
+							hljs.initHighlightingOnLoad();
+						}
+					}
+				]
+			});
+		</script>
+		// Source - https://stackoverflow.com/a/37518822 // Posted by Leftium // Retrieved 2026-07-23, License - CC
+		BY-SA 3.0
+
+		<!-- 2. Create hidden header/footer <div> -->
+		<div id="hidden" style="display: none">
+			<div id="header">
+				<div id="header-left"></div>
+				<div id="header-right"><small>SDU - University of Southern Denmark &nbsp;</small></div>
+				<div id="footer-left"><small>&nbsp; Marco Scirea - <a href="mailto:msc@mmmi.sdu.dk">msc@mmmi.sdu.dk</a></small></div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+			// 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+			var header = $("#header").html();
+			if (window.location.search.match(/print-pdf/gi)) {
+				Reveal.addEventListener("ready", function (event) {
+					$(".slide-background").append(header);
+				});
+			} else {
+				$("div.reveal").append(header);
+			}
+		</script>
+	</body>
+</html>
