@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>Quest of Aivengarde: Comparative Study of Player Experience Across LLM Dialogue Systems</title>
+
+		<link rel="stylesheet" href="../css/reveal.css" />
+		<link rel="stylesheet" href="../css/theme/black.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css" />
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement("link");
+			link.rel = "stylesheet";
+			link.type = "text/css";
+			link.href = window.location.search.match(/print-pdf/gi)
+				? "../css/print/pdf.css"
+				: "../css/print/paper.css";
+			document.getElementsByTagName("head")[0].appendChild(link);
+		</script>
+		<style type="text/css">
+			/* 1. Style header/footer <div> so they are positioned as desired. */
+			#header-left {
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				z-index: 20;
+			}
+			#header-right {
+				position: absolute;
+				top: 0%;
+				right: 0%;
+				z-index: 20;
+			}
+			#footer-left {
+				position: absolute;
+				bottom: 0%;
+				left: 0%;
+				z-index: 20;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- ================= TITLE ================= -->
+				<section data-background-color="var(--color0)" class="title-slide">
+					<h2>Quest of Aivengarde: Comparative Study of Player Experience Across LLM Dialogue Systems</h2>
+					<div class="authors">
+						<strong>Emil Rimer</strong> &nbsp;·&nbsp; <strong>Anthon K. S. Petersen</strong> &nbsp;·&nbsp;
+						<strong>Rasmus Ploug</strong> &nbsp;·&nbsp; <strong>Marco Scirea</strong>
+					</div>
+					<div class="logo_container">
+						<img
+							src="sdu-logo.png"
+							style="
+								width: 40%;
+								position: relative;
+								left: 0px;
+								top: 0px;
+								border: 0px;
+								background: none;
+							" />
+						<img
+							src="logo_metaverse.png"
+							style="
+								width: 40%;
+								position: relative;
+								left: 0px;
+								top: 0px;
+								border: 0px;
+								background: none;
+							" />
+					</div>
+				</section>
+
+				<!-- ================= GROUP 1 : THE PROBLEM (color1) ================= -->
+				<section
+					data-background-color="var(--color1)"
+					data-background-image="logo_metaverse.png"
+					data-background-size="cover"
+					data-background-opacity="0.08">
+					<section>
+						<h2>NPCs carry the story — can LLMs help them carry it better?</h2>
+						<p>
+							From <em>Façade</em> to modern branching trees, NPC dialogue has always shaped immersion,
+							narrative, and agency.
+						</p>
+						<p>
+							LLMs now let NPCs generate contextual, adaptive dialogue in real time — but their actual
+							effect on player experience is still largely unmeasured.
+						</p>
+						<p>AI Dungeon, CALYPSO, CoAuthor show it's technically <em>feasible</em>.</p>
+						<p>
+							What's missing: controlled, empirical comparison of dialogue designs under identical
+							gameplay conditions.
+						</p>
+					</section>
+
+					<section>
+						<h2>Two research questions</h2>
+						<blockquote class="fragment">
+							RQ1 — How do different LLM-driven dialogue systems affect player engagement and immersion in
+							narrative games?
+						</blockquote>
+						<blockquote class="fragment">
+							RQ2 — What design trade-offs emerge between authorial control, system stability, and player
+							agency?
+						</blockquote>
+					</section>
+				</section>
+
+				<!-- ================= GROUP 2 : THE SYSTEM (color2) ================= -->
+				<section
+					data-background-color="var(--color2)"
+					data-background-image="logo_metaverse.png"
+					data-background-size="cover"
+					data-background-opacity="0.08">
+					<section class="section-title">
+						<div class="tag-line">System design</div>
+						<h1>Quest of Aivengarde</h1>
+					</section>
+
+					<section>
+						<h2>Same quest line, four dialogue systems</h2>
+						<div class="container">
+							<div class="bigcol">
+								<figure>
+									<img src="gameComb.png" alt="In-game scene from Quest of Aivengarde" />
+								</figure>
+							</div>
+							<div class="col">
+								<p>
+									Goblins stole the town's food. Players talk to NPCs to solve challenges in identical
+									order.
+								</p>
+								<p>Only the <strong>dialogue system</strong> changes between versions</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>From fixed tree to LLM rephrasing</h2>
+						<div class="container">
+							<div class="col">
+								<figure>
+									<img src="ControlVersion.svg" alt="Control version fixed dialogue tree" />
+								</figure>
+								<p style="text-align: center">
+									<small><strong>Control</strong> — authored tree, no LLM</small>
+								</p>
+							</div>
+							<div class="col">
+								<figure>
+									<img src="VersionA.svg" alt="Version A LLM rephrasing" />
+								</figure>
+								<p style="text-align: center">
+									<small><strong>Version A</strong> — same tree, LLM rephrases the lines</small>
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>From hybrid input to fully open dialogue</h2>
+						<div class="container">
+							<div class="col">
+								<figure>
+									<img src="VersionB.svg" alt="Version B hybrid dialogue" />
+								</figure>
+								<p style="text-align: center">
+									<small><strong>Version B</strong> — pick a reply, or type free text</small>
+								</p>
+							</div>
+							<div class="col">
+								<figure>
+									<img src="VersionC.svg" alt="Version C fully open-ended dialogue" />
+								</figure>
+								<p style="text-align: center">
+									<small><strong>Version C</strong> — no tree at all, just conversation</small>
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>A modular, multi-agent LLM backend</h2>
+						<div class="container">
+							<div class="col">
+								<small>
+									<strong>NPC Module</strong>: in-character replies, per-NPC memory<br /><br />
+									<strong>Function Call Module</strong>: detects quest-relevant actions<br /><br />
+									<strong>Quest Completion Module</strong>: judges Completed / Failed / None<br /><br />
+									<strong>Rephraser Module</strong>: restyles authored lines (Version A)
+								</small>
+							</div>
+							<div class="bigcol">
+								<figure>
+									<img src="DialogueTree_VersionB.svg" alt="Dialogue node generation diagram" />
+								</figure>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- ================= GROUP 3 : METHOD (color3) ================= -->
+				<section
+					data-background-color="var(--color3)"
+					data-background-image="logo_metaverse.png"
+					data-background-size="cover"
+					data-background-opacity="0.08">
+					<section class="section-title">
+						<div class="tag-line">Mixed methods</div>
+						<h1>Method</h1>
+					</section>
+
+					<section>
+						<h2>64 participants, one version each</h2>
+						<table class="pdemo">
+							<tr>
+								<th>Participants</th>
+								<td>64 (62 analyzed)</td>
+							</tr>
+							<tr>
+								<th>Mean age</th>
+								<td>25.2 (SD 4.57)</td>
+							</tr>
+							<tr>
+								<th>Per version</th>
+								<td>Control 16 · A 15 · B 16 · C 15</td>
+							</tr>
+							<tr>
+								<th>Session length</th>
+								<td>10–30 minutes</td>
+							</tr>
+						</table>
+						<p>
+							<small
+								>Between-subjects design: each participant played only <em>one</em> dialogue system,
+								randomly assigned.</small
+							>
+						</p>
+					</section>
+
+					<section>
+						<h2>Data collected</h2>
+						<div class="container">
+							<div class="col">
+								<p>
+									<strong>Behavioral logs</strong><br />dialogue text &amp; timing · movement · area
+									transitions · quest outcomes · LLM latency
+								</p>
+							</div>
+							<div class="col">
+								<p>
+									<strong>Post-game survey</strong><br />24 Likert items + 4 open questions, across
+									various themes
+								</p>
+							</div>
+						</div>
+						<p>
+							<small
+								>ANOVA / Kruskal–Wallis for quantitative comparisons; inductive thematic coding for the
+								open-ended feedback.</small
+							>
+						</p>
+					</section>
+				</section>
+
+				<!-- ================= GROUP 4 : RESULTS (color4) ================= -->
+				<section
+					data-background-color="var(--color4)"
+					data-background-image="logo_metaverse.png"
+					data-background-size="cover"
+					data-background-opacity="0.08">
+					<section class="section-title">
+						<div class="tag-line">What we found</div>
+						<h1>Results</h1>
+					</section>
+
+					<section>
+						<h2>Open-ended dialogue leads to longer play</h2>
+						<div class="container">
+							<div class="col">
+								<figure>
+									<img src="dialogueTime_all.svg" alt="Total dialogue time by version" />
+								</figure>
+							</div>
+							<div class="col">
+								<p>
+									Version C produced significantly <b>more total dialogue</b> time than every other
+									version (p &lt; .001, η² = 0.39).
+								</p>
+								<p>
+									Once dialogue time is subtracted, playtime differences vanish — the extra time is
+									<em>all conversation</em>, not slower gameplay.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Differences in conversations</h2>
+						<div class="container">
+							<div class="col">
+								<figure>
+									<img src="InteractionsStarted_all.svg" alt="Interactions started by version" />
+								</figure>
+							</div>
+							<div class="col">
+								<figure>
+									<img src="RepsonseCount.svg" alt="Turns per conversation by version" />
+								</figure>
+							</div>
+						</div>
+						<ul>
+							<li>Control players start more conversations</li>
+							<li>Version B holds the longest per-conversation exchanges</li>
+							<li>Version C wins on <em>total</em> volume</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Survey results</h2>
+						<p>
+							Three survey items showed significant differences: interest in talking to NPCs, enjoyment of
+							the dialogue system, and perceived unnatural moments.
+						</p>
+						<p>
+							Positive feedback praised Version C's freedom and immersion, and Version B's balance of
+							structure and freedom.
+						</p>
+						<p>
+							Across all versions: limited agency, occasional model misunderstanding, and — in Version B —
+							dialogue inconsistency and UI friction were the main complaints.
+						</p>
+					</section>
+
+					<section>
+						<h2>Casual players, especially, lean into open-ended dialogue</h2>
+						<p>Over 95% of Version C's free-text input stayed grounded and in-character</p>
+						<p>
+							Casual players may value conversational immersion over efficiency; hardcore players may
+							prioritize clarity and predictable progress instead  
+						</p>
+					</section>
+				</section>
+
+				<!-- ================= GROUP 5 : FRAMEWORK & CLOSE (color5) ================= -->
+				<section
+					data-background-color="var(--color5)"
+					data-background-image="logo_metaverse.png"
+					data-background-size="cover"
+					data-background-opacity="0.08">
+					<section class="section-title">
+						<div class="tag-line">Putting it to use</div>
+						<h1>A Design Framework</h1>
+					</section>
+
+					<section>
+						<h2>Two axes</h2>
+									<img
+											src="axisModel.svg" alt="Control-freedom design framework" />
+								<p
+									>Control and A sit stable and structured, Version C trades stability for freedom and
+									immersion, and Version B is somewhat in between</p
+								>
+					</section>
+
+					<section>
+						<h3>Structure and freedom trade off</h3>
+						<p class="fragment fade-up">More conversational freedom → more immersion, more engagement.</p>
+						<p class="fragment fade-up">
+							More conversational freedom → more variability, latency, and risk of drift.
+						</p>
+						<h3 class="fragment fade-up">There's no universally "best" version</h3>
+						<p class="fragment fade-up">
+							Match the system to the audience and the narrative's tolerance for surprise.
+						</p>
+					</section>
+
+					<section>
+						<h2>Limitations</h2>
+						<ul>
+							<li>15–16 participants per condition</li>
+							<li>Between-subjects design: no one directly compared two versions themselves</li>
+							<li>One RPG, one narrative, one set of quests</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Conversational Freedom is a design decision</h2>
+						<p>
+							Open-ended LLM dialogue seems to boosts engagement and immersion but it comes with real costs in stability and predictability.
+						</p>
+						<p>
+							Future work: long/short-term memory for NPCs, chain-of-thought prompting for reasoning,
+								within-subject comparisons, and a broader, more diverse player sample.
+						</p>
+					</section>
+				</section>
+
+				<!-- ================= THANK YOU ================= -->
+				<section
+					class="title-slide"
+					data-background-image="logo_metaverse.png"
+					data-background-size="cover"
+					data-background-opacity="0.08">
+					<div>Thank you :)</div>
+					<h1>Questions?</h1>
+					<hr />
+					<div>
+						Emil Rimer — emil@rimer.dk <br />
+						Anthon K. S. Petersen — ak@sbponline.dk <br />
+						Rasmus Ploug — ploug@imada.sdu.dk <br />
+						Marco Scirea — msc@mmmi.sdu.dk
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: "../plugin/markdown/marked.js" },
+					{ src: "../plugin/markdown/markdown.js" },
+					{ src: "../plugin/notes/notes.js", async: true },
+					{
+						src: "../plugin/highlight/highlight.js",
+						async: true,
+						callback: function () {
+							hljs.initHighlightingOnLoad();
+						}
+					}
+				]
+			});
+		</script>
+		// Source - https://stackoverflow.com/a/37518822 // Posted by Leftium // Retrieved 2026-07-23, License - CC
+		BY-SA 3.0
+
+		<!-- 2. Create hidden header/footer <div> -->
+		<div id="hidden" style="display: none">
+			<div id="header">
+				<div id="header-left"></div>
+				<div id="header-right"><small>SDU - University of Southern Denmark &nbsp;</small></div>
+				<div id="footer-left">
+					<small>&nbsp; Marco Scirea - <a href="mailto:msc@mmmi.sdu.dk">msc@mmmi.sdu.dk</a></small>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+			// 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+			var header = $("#header").html();
+			if (window.location.search.match(/print-pdf/gi)) {
+				Reveal.addEventListener("ready", function (event) {
+					$(".slide-background").append(header);
+				});
+			} else {
+				$("div.reveal").append(header);
+			}
+		</script>
+	</body>
+</html>
