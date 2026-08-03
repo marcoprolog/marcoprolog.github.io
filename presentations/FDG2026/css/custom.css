@@ -70,3 +70,6 @@ figure img {
   max-width: 100%; max-height: 62vh; border-radius: 8px;
   border: 1px solid var(--rule); background: #0b0d10;
 }
+figure img.whitebg{
+    background-color: white;
+}
