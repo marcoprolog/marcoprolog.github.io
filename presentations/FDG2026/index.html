@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<title>Quest of Aivengarde: Comparative Study of Player Experience Across LLM Dialogue Systems</title>
+		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="../css/reveal.css" />
 		<link rel="stylesheet" href="../css/theme/black.css" />
@@ -84,26 +84,22 @@
 					data-background-color="var(--color1)"
 					data-background-image="logo_metaverse.png"
 					data-background-size="cover"
-					data-background-opacity="0.08">
+					data-background-opacity="0.04">
 					<section>
-						<h2>NPCs carry the story — can LLMs help them carry it better?</h2>
-						<p>
+						<h3>NPCs carry the story, can LLMs help them carry it better?</h3>
+						<p class="fragment fade-up">
 							From <em>Façade</em> to modern branching trees, NPC dialogue has always shaped immersion,
 							narrative, and agency.
 						</p>
-						<p>
-							LLMs now let NPCs generate contextual, adaptive dialogue in real time — but their actual
+						<p class="fragment fade-up">
+							LLMs now let NPCs generate contextual, adaptive dialogue in real time, but their actual
 							effect on player experience is still largely unmeasured.
 						</p>
-						<p>AI Dungeon, CALYPSO, CoAuthor show it's technically <em>feasible</em>.</p>
-						<p>
-							What's missing: controlled, empirical comparison of dialogue designs under identical
-							gameplay conditions.
-						</p>
+						<p class="fragment fade-up">AI Dungeon, CALYPSO, CoAuthor show it's technically <em>feasible</em>.</p>
 					</section>
 
 					<section>
-						<h2>Two research questions</h2>
+						<h2>Research questions</h2>
 						<blockquote class="fragment">
 							RQ1 — How do different LLM-driven dialogue systems affect player engagement and immersion in
 							narrative games?
@@ -135,11 +131,11 @@
 								</figure>
 							</div>
 							<div class="col">
-								<p>
+								<small>
 									Goblins stole the town's food. Players talk to NPCs to solve challenges in identical
 									order.
-								</p>
-								<p>Only the <strong>dialogue system</strong> changes between versions</p>
+								</small>
+								<p class="fragment fade-up">Only the <strong>dialogue system</strong> changes between versions</p>
 							</div>
 						</div>
 					</section>
@@ -149,7 +145,7 @@
 						<div class="container">
 							<div class="col">
 								<figure>
-									<img src="ControlVersion.svg" alt="Control version fixed dialogue tree" />
+									<img class="whitebg" src="ControlVersion.svg" alt="Control version fixed dialogue tree" />
 								</figure>
 								<p style="text-align: center">
 									<small><strong>Control</strong> — authored tree, no LLM</small>
@@ -157,7 +153,7 @@
 							</div>
 							<div class="col">
 								<figure>
-									<img src="VersionA.svg" alt="Version A LLM rephrasing" />
+									<img class="whitebg" src="VersionA.svg" alt="Version A LLM rephrasing" />
 								</figure>
 								<p style="text-align: center">
 									<small><strong>Version A</strong> — same tree, LLM rephrases the lines</small>
@@ -171,7 +167,7 @@
 						<div class="container">
 							<div class="col">
 								<figure>
-									<img src="VersionB.svg" alt="Version B hybrid dialogue" />
+									<img class="whitebg" src="VersionB.svg" alt="Version B hybrid dialogue" />
 								</figure>
 								<p style="text-align: center">
 									<small><strong>Version B</strong> — pick a reply, or type free text</small>
@@ -179,7 +175,7 @@
 							</div>
 							<div class="col">
 								<figure>
-									<img src="VersionC.svg" alt="Version C fully open-ended dialogue" />
+									<img class="whitebg" src="VersionC.svg" alt="Version C fully open-ended dialogue" />
 								</figure>
 								<p style="text-align: center">
 									<small><strong>Version C</strong> — no tree at all, just conversation</small>
@@ -190,19 +186,22 @@
 
 					<section>
 						<h2>A modular, multi-agent LLM backend</h2>
+						
+								<figure>
+									<img class="whitebg" style="max-height: 25vh;" src="LLM_Flowchart.svg" alt="Dialogue node generation diagram" />
+								</figure>
 						<div class="container">
 							<div class="col">
 								<small>
-									<strong>NPC Module</strong>: in-character replies, per-NPC memory<br /><br />
-									<strong>Function Call Module</strong>: detects quest-relevant actions<br /><br />
-									<strong>Quest Completion Module</strong>: judges Completed / Failed / None<br /><br />
-									<strong>Rephraser Module</strong>: restyles authored lines (Version A)
+									<strong>NPC Module</strong>: in-character replies, per-NPC memory<br />
+									<strong>Function Call Module</strong>: detects quest-relevant actions
+									
 								</small>
 							</div>
-							<div class="bigcol">
-								<figure>
-									<img src="DialogueTree_VersionB.svg" alt="Dialogue node generation diagram" />
-								</figure>
+							<div class="col">
+								<small>
+								<strong>Quest Completion Module</strong>: judges Completed / Failed / None<br />
+									<strong>Rephraser Module</strong>: restyles authored lines (Version A)</small>
 							</div>
 						</div>
 					</section>
@@ -297,54 +296,52 @@
 									version (p &lt; .001, η² = 0.39).
 								</p>
 								<p>
-									Once dialogue time is subtracted, playtime differences vanish — the extra time is
-									<em>all conversation</em>, not slower gameplay.
+									<small>Once dialogue time is subtracted, playtime differences vanish: the extra time is
+									<em>all conversation</em>, not slower gameplay.</small>
 								</p>
 							</div>
 						</div>
 					</section>
 
 					<section>
-						<h2>Differences in conversations</h2>
+						<h3>Differences in conversations</h3>
 						<div class="container">
 							<div class="col">
 								<figure>
-									<img src="InteractionsStarted_all.svg" alt="Interactions started by version" />
+									<img style="max-height: 40vh;" src="InteractionsStarted_all.svg" alt="Interactions started by version" />
 								</figure>
 							</div>
 							<div class="col">
 								<figure>
-									<img src="RepsonseCount.svg" alt="Turns per conversation by version" />
+									<img style="max-height: 40vh;" src="RepsonseCount.svg" alt="Turns per conversation by version" />
 								</figure>
 							</div>
 						</div>
-						<ul>
-							<li>Control players start more conversations</li>
-							<li>Version B holds the longest per-conversation exchanges</li>
-							<li>Version C wins on <em>total</em> volume</li>
-						</ul>
+							<small class="fragment fade-up">Control players start more conversations</small>
+							<small class="fragment fade-up">Version B holds the longest per-conversation exchanges</small><br>
+							<small class="fragment fade-up">Version C wins on <em>total</em> volume</small>
 					</section>
 
 					<section>
 						<h2>Survey results</h2>
-						<p>
+						<p class="fragment fade-up">
 							Three survey items showed significant differences: interest in talking to NPCs, enjoyment of
 							the dialogue system, and perceived unnatural moments.
 						</p>
-						<p>
+						<p class="fragment fade-up">
 							Positive feedback praised Version C's freedom and immersion, and Version B's balance of
 							structure and freedom.
 						</p>
-						<p>
+						<p class="fragment fade-up">
 							Across all versions: limited agency, occasional model misunderstanding, and — in Version B —
 							dialogue inconsistency and UI friction were the main complaints.
 						</p>
 					</section>
 
 					<section>
-						<h2>Casual players, especially, lean into open-ended dialogue</h2>
-						<p>Over 95% of Version C's free-text input stayed grounded and in-character</p>
-						<p>
+						<h2>Casual players lean into open-ended dialogue</h2>
+						<p class="fragment fade-up">Over 95% of Version C's free-text input stayed grounded and in-character</p>
+						<p class="fragment fade-up">
 							Casual players may value conversational immersion over efficiency; hardcore players may
 							prioritize clarity and predictable progress instead  
 						</p>
@@ -364,12 +361,9 @@
 
 					<section>
 						<h2>Two axes</h2>
+						<figure>
 									<img
-											src="axisModel.svg" alt="Control-freedom design framework" />
-								<p
-									>Control and A sit stable and structured, Version C trades stability for freedom and
-									immersion, and Version B is somewhat in between</p
-								>
+											class="whitebg" src="axisModel.svg" alt="Control-freedom design framework" style="max-height: 45vh;" /></figure>
 					</section>
 
 					<section>
@@ -389,16 +383,16 @@
 						<ul>
 							<li>15–16 participants per condition</li>
 							<li>Between-subjects design: no one directly compared two versions themselves</li>
-							<li>One RPG, one narrative, one set of quests</li>
+							<li>Only one game as testbed</li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Conversational Freedom is a design decision</h2>
-						<p>
+						<p class="fragment fade-up">
 							Open-ended LLM dialogue seems to boosts engagement and immersion but it comes with real costs in stability and predictability.
 						</p>
-						<p>
+						<p class="fragment fade-up">
 							Future work: long/short-term memory for NPCs, chain-of-thought prompting for reasoning,
 								within-subject comparisons, and a broader, more diverse player sample.
 						</p>
@@ -417,7 +411,7 @@
 					<div>
 						Emil Rimer — emil@rimer.dk <br />
 						Anthon K. S. Petersen — ak@sbponline.dk <br />
-						Rasmus Ploug — ploug@imada.sdu.dk <br />
+						Rasmus Ploug — ploug@sdu.dk <br />
 						Marco Scirea — msc@mmmi.sdu.dk
 					</div>
 				</section>
